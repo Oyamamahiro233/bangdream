@@ -1,0 +1,154 @@
+@import url(public.css);
+footer {
+  width: 100%;
+  max-width: 1920px;
+  height: 580px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+footer .footerBgSection {
+  background: #000;
+}
+footer .footerBgSection img {
+  width: 100%;
+  opacity: 0.3;
+}
+footer .footerNavSection {
+  width: 100%;
+  max-width: 1920px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer .footerNavSection .footerTwitterBlock {
+  padding-top: 60px;
+}
+footer .footerNavSection .footerTwitterBlock h2.footerTwitterTitle {
+  font-family: "Cabin", sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  line-height: 0.8;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+footer .footerNavSection .footerTwitterBlock h2.footerTwitterTitle img {
+  width: 22px;
+  margin: 0 0.25em;
+}
+footer .footerNavSection .footerTwitterBlock ul.footerTwitterList {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+footer .footerNavSection .footerTwitterBlock ul.footerTwitterList li {
+  margin-right: 20px;
+}
+footer .footerNavSection .footerTwitterBlock ul.footerTwitterList li a {
+  width: 460px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+footer .footerNavSection .footerTwitterBlock ul.footerTwitterList li a .twitterImgArea {
+  width: 120px;
+  text-align: center;
+}
+footer .footerNavSection .footerTwitterBlock ul.footerTwitterList li a .twitterImgArea img {
+  width: 80px;
+}
+footer .footerNavSection .footerTwitterBlock ul.footerTwitterList li a .twitterTextArea {
+  line-height: 1.6;
+}
+footer .footerNavSection .footerTwitterBlock ul.footerTwitterList li a .twitterTextArea span {
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+}
+footer .footerNavSection .footerSns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+footer .footerNavSection .footerSns li {
+  margin-left: 28px;
+}
+footer .footerNavSection .footerSns li span {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  line-height: 34px;
+}
+footer .footerNavSection .footerSns li a {
+  display: block;
+  width: 34px;
+}
+footer .footerNavSection .footerSns li a img {
+  width: 100%;
+}
+footer .footerNavSection .footerSns li:nth-child(1) {
+  margin: 0;
+}
+footer .footerNavSection .footerLogo a {
+  display: block;
+  width: 240px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+footer .footerNavSection .footerLogo a img {
+  width: 100%;
+  height: auto;
+}
+footer .footerNavSection .footerLogo a .hover {
+  display: none;
+}
+footer .footerNavSection .footerLogo a:hover img {
+  display: none;
+}
+footer .footerNavSection .footerLogo a:hover img + .hover {
+  display: block;
+}
+footer .footerRelatedLinks {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+footer .footerRelatedLinks img {
+  width: 60px;
+}
+footer .footerLangLinks {
+  text-align: center;
+  margin-bottom: 15px;
+}
+footer .footerLangLinks a {
+  font-family: "Cabin", sans-serif;
+  font-size: 18PX;
+  letter-spacing: 0.2em;
+  padding: 0 14px;
+  line-height: 1;
+  color: #fff;
+}
+footer .footerLangLinks a + a {
+  border-left: 1px solid #fff;
+}
+footer .footerGuidelineLink {
+  text-align: center;
+  margin-bottom: 15px;
+}
+footer .footerGuidelineLink a {
+  color: #fff;
+}
+footer .footerCopyright {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+footer .footerCopyright span:nth-child(1) {
+  margin-right: 0.25em;
+}

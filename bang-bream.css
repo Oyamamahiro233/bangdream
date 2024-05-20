@@ -1,0 +1,118 @@
+@import url(public.css);
+#header .logo-img {
+  width: 200px;
+  height: 100%;
+}
+#header .img-medium {
+  width: 40px;
+}
+#header .text-mix {
+  color: #333;
+}
+#banner-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: auto;
+}
+#banner-container .img {
+  max-width: 100%;
+  height: auto;
+  background: red;
+}
+#banner-container .img img {
+  max-width: 100%;
+  height: auto;
+}
+#banner-container .scrollContentBtn {
+  position: absolute;
+  width: 140px;
+  height: 70px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#banner-container .scrollContentBtn img {
+  width: 100%;
+  height: auto;
+}
+.pageMain {
+  max-width: 1920px;
+  margin: auto;
+  width: 100%;
+}
+.underBanners {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  margin-bottom: 110px;
+  background: url(image/news-list-bg.png);
+  padding: 70px 0 120px 0;
+}
+.underBanners .viewport {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+}
+.underBanners .viewport .swiper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.underBanners .viewport .swiper .swipeBox {
+  max-width: 580px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.underBanners .viewport .swiper .swipeBox .swipe-slide {
+  height: auto;
+  min-width: 100%;
+}
+.underBanners .viewport .swiper .swipeBox .swipe-slide img {
+  width: 580px;
+  height: auto;
+  padding-right: 20px;
+}
+.underBanners .control-prev,
+.underBanners .control-next {
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  cursor: pointer;
+}
+.underBanners .control-prev {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -91px;
+}
+.underBanners .control-next {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: -91px;
+}
+.underBanners .arrow-prev,
+.underBanners .arrow-next {
+  width: 100%;
+  height: 100%;
+  -webkit-mask: conic-gradient(at 50px 50px, transparent 75%, blue 75%);
+  border: 3px solid red;
+}
+.underBanners .arrow-prev {
+  transform: rotate(-45deg);
+}
+.underBanners .arrow-next {
+  transform: rotate(135deg);
+}
+.underBanners .underBannnersBottom img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

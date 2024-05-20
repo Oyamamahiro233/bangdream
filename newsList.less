@@ -1,0 +1,177 @@
+@import url(./public.css);
+
+section.newsListBlack {
+    width: 1920px;
+    margin: auto;
+
+    .newsListTiTle {
+        text-align: center;
+        margin: 0 0 100px;
+
+        .EN {
+            font-family: "Cabin", sans-serif;
+            letter-spacing: .1;
+            font-size: 2.2rem;
+            font-weight: 700;
+            position: relative;
+            padding-left: 35px;
+            margin: 0 0 0 -4px;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 28px;
+                height: 28px;
+                background: url(./image/DM_20240507183319_005.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                margin-top: -16px;
+            }
+
+        }
+
+        .JP {
+            font-size: 1rem;
+            color: #8b8b8b;
+            position: relative;
+            padding: 0 30px;
+
+            &::before,
+            &::after {
+                content: '';
+                width: 16px;
+                height: 1px;
+                position: absolute;
+                top: 50%;
+                background: #8b8b8b;
+            }
+
+            &::before {
+                left: 0;
+            }
+
+            &::after {
+                right: 0;
+            }
+        }
+    }
+
+    .topPageNewsList {
+        max-width: 1640px;
+        width: 100%;
+        margin: 0 auto 40px;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 360px;
+            margin: 0px 20px 80px;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 60px;
+                height: 60px;
+                background: url(./image/DM_20240507183319_006.png) no-repeat;
+                background-size: 100% 100%;
+                position:
+                    absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+
+            a {
+                display: block;
+
+                .newsListImageWrap {
+                    width: 100%;
+                    height: auto;
+                    border: 1px solid #d9d9d9;
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0 0 20px;
+
+                    .newsListImage {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .imageHoverEffectLayer {
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(228, 0, 73, 0.5);
+                        position: absolute;
+                        top: -100%;
+                        left: 0;
+                        transition: top .25s ease;
+                        z-index: 1;
+
+                    }
+                }
+
+                &:hover .imageHoverEffectLayer {
+                    top: 0;
+                }
+                &:hover{
+                    color: rgba(228, 0, 73, 0.5);
+                }
+                
+                .newsListInfo {
+                    span {
+                        width: 112px;
+                        height: 30px;
+                        display: block;
+                        margin: 0 0 20px;
+                        background: url(./image/DM_20240507183319_007.png);
+                        background-size: 100% 100%;
+
+                    }
+
+                    .newsListText {
+                        font-size: 1.5rem;
+                        height: 5.5em;
+                    }
+                }
+            }
+
+            p.newsListDate {
+                font-family: "Cabin", sans-serif;
+                font-size: 1.5rem;
+                color: #8b8b8b;
+                letter-spacing: .1em;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.goToIndex {
+    width: 260px;
+    height: 50px;
+    background: #e5004f;
+    border-radius: 3px;
+    margin: 65px auto 0;
+    text-align: center;
+    letter-spacing: .1em;
+    font-size: 1.6rem;
+    line-height: 50px;
+    font-family: "Cabin", sans-serif;
+
+    a {
+        width: 100%;
+        color: #fff;
+        display: block;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

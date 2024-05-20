@@ -1,0 +1,44 @@
+@import url(./puclic.css);
+
+.footerBannerBlock {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(./image/DM_20240507183319_009.PNG);
+    background-position: top center;
+    padding: 80px 15px 50px;
+
+    ul.footerBanners {
+        width: 100%;
+        max-width: 1140px;
+        margin: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: flex;
+
+        li {
+            width: calc(50% - 10px);
+            margin-bottom: 30px;
+
+
+            a {
+                display: block;
+                position: relative;
+                &:hover::before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(228, 0, 75, 0.5);
+                }
+
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}
