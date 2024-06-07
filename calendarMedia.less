@@ -1,0 +1,88 @@
+@media screen and (max-width:1276px) {
+    section.scheduleBlock {
+        .calendar-wraper {
+
+            max-width: 1200px;
+            padding: 0 1.66667%;
+
+            .calendarbody {
+                .calendarRow {
+                    // height: 251px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section.scheduleBlock {
+        .calendar-wraper {
+            .calendar {
+                margin-top: 5%;
+                border: 0;
+
+                .calendarheader {
+                    display: none;
+                }
+
+                .calendarbody {
+                    border: 0;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+                    .calendarBelt {
+                        display: none;
+                    }
+
+                    .calendarRow {
+                        &:first-child {
+                            border-top: 0;
+                        }
+
+                        display: block;
+                        position: static;
+                    }
+
+                    .calendarCell {
+                        display: flex;
+
+                        width: 100%;
+                        min-height: auto;
+                        border-top: 1px solid rgba(0, 0, 0, 0.12);
+                        padding: 2.5% 0;
+                        border-right: 0;
+
+                        .calendarCellDate {
+                            width: 13%;
+                            padding: 0;
+                            text-align: center;
+                            line-height: 1.4;
+                            font-size: 5vw;
+
+                            span {
+                                display: block;
+                                font-size: 3vw;
+                            }
+                        }
+
+                        .calendarContent {
+                            width: 87%;
+
+                            a {
+                                display: block;
+                                background: #ff774e;
+                                color: white;
+                                padding: 2.5px 5px;
+                                width: 100%;
+                                font-size: 2.6vw;
+                                &:last-child{
+                                    margin-top:5px ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

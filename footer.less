@@ -1,4 +1,7 @@
-@import url(./public.css);
+
+.isSp {
+    display: none;
+}
 
 footer {
     width: 100%;
@@ -10,10 +13,15 @@ footer {
 
     .footerBgSection {
         background: #000;
+        transform: translateX(-50%);
+        position: absolute;
+        top: 0;
+        left: 50%;
 
         img {
-            width: 100%;
+            width: 1920px;
             opacity: 0.3;
+
         }
     }
 
@@ -27,7 +35,7 @@ footer {
         .footerTwitterBlock {
             padding-top: 60px;
 
-            h2.footerTwitterTitle {
+            .footerTwitterTitle {
                 font-family: "Cabin", sans-serif;
                 font-size: 32px;
                 letter-spacing: .1em;
@@ -44,14 +52,19 @@ footer {
                 }
             }
 
-            ul.footerTwitterList {
+            .footerTwitterList {
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
+
                 margin-bottom: 30px;
 
                 li {
                     margin-right: 20px;
-
+                    &:hover a {
+                        color: #e5004f;
+                        background-color: white;
+                    }
                     a {
 
                         width: 460px;
@@ -148,7 +161,11 @@ footer {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
-
+li{
+    &:first-child{
+        margin-right: 20px;
+    }
+}
         img {
             width: 60px;
         }
@@ -188,6 +205,8 @@ footer {
         text-align: center;
 
         span {
+            display: inline-block;
+
             &:nth-child(1) {
                 margin-right: .25em;
             }

@@ -1,0 +1,73 @@
+@media only screen and (max-width:1279px) {
+    .heanderContainer.header.levelUp {
+        .layout {
+            padding: 5px 15px 0 5px;
+            height: 53px;
+
+            a.logo {
+                width: 100px;
+            }
+
+            ul.nav {
+                display: none;
+            }
+
+            div.medium {
+                position: absolute;
+                top: 11px;
+                right: 57px;
+
+                a {
+
+                    &:nth-child(1) {
+                        margin-left: 0;
+                    }
+
+                    margin-left: 8px;
+
+                    img {
+                        width: 32px;
+                    }
+
+
+                }
+            }
+
+
+        }
+    }
+
+    .heanderContainer.is-scrolled {
+        padding: 0;
+    }
+
+    div.lineBox {
+        display: block;
+    }
+
+}
+
+//微变
+@media only screen and (max-width:1380px) {
+    .heanderContainer {
+        .layout {
+            ul.nav {
+                li.nav-item+li.nav-item {
+                    margin-left: 20px;
+                }
+            }
+
+            div.medium {
+
+                a {
+                    &:nth-child(1) {
+                        margin-left: 40px;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}

@@ -3,53 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./bang-bream.css">
-    <script src="./carousel.js"></script>
-    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./bang-bream-media.css">
 </head>
 
 <body>
-    <div id="banner-container">
-        <div class="img">
-            <img src="./image/a55a28f5-0fd0-4c7f-a2d3-87b9fbc6d027.jpg">
+
+    <header>
+        <NAVTOP></NAVTOP>
+    </header>
+    <div class="pageWrap">
+        <mainBackground></mainBackground>
+        <BANGCAROUSEL></BANGCAROUSEL>
+        <div class="mainPage">
+            <NEWSLIST></NEWSLIST>
+            <CALENDAR></CALENDAR>
         </div>
-        <div class="scrollContentBtn">
-            <img src="./image/scroll-content-btn.png" alt="" srcset="">
-        </div>
+
     </div>
-    <div class="underBanners">
-        <div class="viewport" style="position: relative;">
-            <div class="swiper">
-                <div class="swipeBox">
-                    <div class="swipe-slide">
-                        <img src="image\DM_20240508214951_009.PNG" alt="" srcset="">
-                    </div>
-                    <div class="swipe-slide">
-                        <img src="image\DM_20240508214951_008.PNG" alt="" srcset="">
-                    </div>
-                    <div class="swipe-slide">
-                        <img src="./image\DM_20240508214951_005.JPEG" alt="" srcset="">
-                    </div>
-                </div>
-            </div>
-            <div class="control-prev">
-                <div class="arrow-prev"></div>
-            </div>
-            <div class="control-next">
-                <div class="arrow-next"></div>
-            </div>
+<div class="footerContainer">
+    <FOOTERbANNER></FOOTERbANNER>
+        <FOOTERBuTTOM></FOOTERBUTTOM>
         </div>
-        <div class="underBannnersBottom">
-            <img src="./image/event-banner-bottom.png" alt="">
-            <!-- <img  src="./image/event-banner-bottom.png" alt=""> -->
-        </div>
-    </div>
-    <main class="pageMain">
-     
-    </main>
 </body>
 
 </html>
